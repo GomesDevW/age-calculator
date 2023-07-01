@@ -1,0 +1,206 @@
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: hsl(0, 0%, 94%);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.container{
+    width: 52.5rem;
+    height: 650px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 45px 60px 60px 60px;
+    border-radius: 25px;
+    border-bottom-right-radius: 200px;
+}
+
+.inputs-container{
+    display: flex;
+    justify-content: flex-start;
+    border-bottom: 2px solid hsl(0, 0%, 94%);
+    padding-bottom: 40px;
+}
+
+.input-container{
+    display: flex;
+    flex-direction: column;
+    margin-right: 30px;
+    position: relative;
+}
+
+.clear{
+    position: absolute;
+    right: -15px;
+    bottom: 50%;
+    cursor: pointer;
+    color: hsl(259, 100%, 65%);
+    font-size: 1.2rem;
+    transition: .3s;
+}
+
+.clear:hover{
+color:hsl(259, 89%, 74%) ;
+}
+
+.input-container:nth-child(3){
+    margin-right: 0;
+}
+
+.input-container input {
+    margin-top: 8px;
+    border-radius: 10px;
+    max-width: 160px;
+    border:1px solid hsl(0, 0%, 86%) ;
+    font-weight: bold;
+    font-size: 2rem; 
+    padding: 5px 0 5px 20px;
+    
+}
+
+.input-container input::placeholder{
+    color: #aaa;
+}
+
+/* Retirar as setas do input number */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.input-container label{
+    font-weight: 700;
+    color: hsl(0, 1%, 44%);
+    font-size: .9rem;
+}
+
+.top{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+button{
+    background-color: hsl(259, 100%, 65%) ;
+    position: absolute;
+    right: 0;
+    bottom: -50px;
+    width: 5.938rem;
+    height: 5.938rem;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: none;
+}
+
+.results{
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+}
+
+.result-lines{
+    font-weight: 900;
+    font-size: 90px;
+    font-style: italic;
+}
+
+#year-result, #month-result, #day-result{
+    color: hsl(259, 100%, 65%);
+}
+
+#error-message-day, 
+#error-message-month, 
+#error-message-year{
+    color: rgb(252, 29, 0);
+    font-style: italic;
+    font-size: .8rem;
+    position: absolute;
+    bottom: -20px;
+
+}
+
+
+
+
+@media (max-width: 850px){
+
+    .container{
+        width: 95vw;
+        height: 490px;
+        border-bottom-right-radius: 100px;
+        padding: 50px 25px;
+    }
+
+    .input-container{
+        margin-right: 20px;   
+        display: flex;
+        justify-content: space-between; 
+        padding-bottom: 25px;
+    }
+
+    .input-container input {
+        max-width: 90px;
+        font-size: 1.3rem;
+    }
+
+    .clear{
+        top: 80px;
+    }
+
+
+    .input-container input::placeholder{
+        font-size: 1rem;
+        
+    }
+    
+    .top{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    button{
+        background-color: hsl(259, 100%, 65%) ;
+        position: relative ;
+        top: -30px;
+        width: 4rem;
+        height: 4rem;
+    }
+
+    button img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .results{
+        padding-top: 0;
+    }
+    .result-lines{
+        font-size: 50px;
+        line-height: 60px;
+    }
+    #error-message-day, 
+    #error-message-month, 
+    #error-message-year{
+        color: rgb(252, 29, 0);
+        font-style: italic;
+        font-size: .7rem;
+        bottom: -10px;
+    }
+
+
+}

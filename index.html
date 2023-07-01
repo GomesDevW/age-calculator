@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Calculator</title>
+    <link rel="shortcut icon" href="./assets/images/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;0,800;1,400;1,500;1,700;1,800&display=swap" rel="stylesheet">
+    
+    <script src="./assets/js/script.js" defer></script>
+</head>
+<body>
+    <section class="container">
+        <div class="top">
+            <div class="inputs-container">
+                <div class="input-container">
+                    <label for="day">D A Y</label>
+                    <input type="number" name="day" id="day" placeholder="DD">
+                    <span id="error-message-day"></span>
+                </div>
+                <div class="input-container">
+                    <label for="month">M O N T H</label>
+                    <input type="number" name="month" id="month" placeholder="MM">
+                    <span id="error-message-month"></span>
+                </div>
+                <div class="input-container">
+                    <label for="year">Y E A R</label>
+                    <input type="number" name="year" id="year" placeholder="YYYY">
+                    <span id="error-message-year"></span>
+                </div>
+                <span class="clear">Clear all fields</span>
+            </div>
+            <button>
+                <img src="./assets/images/icon-arrow.svg" alt="arrow" >
+            </button>
+        </div>
+        <div class="results">
+            <span class="result-lines"><span id="year-result">- -</span> years</span>
+            <span class="result-lines"><span id="month-result">- -</span> months</span>
+            <span class="result-lines"><span id="day-result">- -</span> days</span>
+        </div>
+    </section>
+</body>
+
+</html>
