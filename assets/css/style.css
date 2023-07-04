@@ -133,6 +133,14 @@ button{
 
 }
 
+footer{
+    position: fixed;
+    bottom: 0;
+    padding: 10px;
+    color: #000;
+    font-size: .8rem;
+}
+
 
 
 
@@ -201,6 +209,10 @@ button{
         font-size: .7rem;
         bottom: -10px;
     }
-
+    footer{
+        color: #2c2b2b;
+        font-size: .6em;
+        
+    }
 
 }
